@@ -1,0 +1,14 @@
+.hero-section {
+  //   background-color: red;
+  padding: $allPageBorderPadding;
+
+  color: white;
+  .left-hero {
+    .hero-main-title {
+      font-size: 66px;
+      .withLineBg {
+        // background: url("/public/images/wide-line.svg");
+      }
+    }
+  }
+}

@@ -14,6 +14,10 @@ body {
 
   .Header {
     width: 100%;
+    min-height: 100vh;
+    background: url("/images/hero-three-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     .top-header {
       width: 100%;
       padding: $allPageBorderPadding;

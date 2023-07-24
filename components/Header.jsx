@@ -13,6 +13,7 @@ import { MdEmail } from "react-icons/md";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Button from "./Button";
+import Hero from "./Hero";
 export default function Header() {
   const links = [
     {
@@ -98,6 +99,7 @@ export default function Header() {
           <GiHamburgerMenu className="hamMenu" />
         </div>
       </div>
+      <Hero />
     </div>
   );
 }
