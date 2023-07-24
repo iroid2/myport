@@ -78,7 +78,7 @@ export default function Header() {
         </div>
       </div>
       <div className="navBar-header spaceBtn">
-        <div className="leftNav">
+        <div className="leftNav center">
           <Image src={"/images/logo.svg"} alt="" width={20} height={40} />
         </div>
         <div className="midNav center df">
