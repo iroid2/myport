@@ -1,0 +1,16 @@
+$allPageBorderPadding: 1rem 3rem;
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconColor {
+  color: rgb(218, 237, 26);
+}
+.df {
+  display: flex;
+}
+.spaceBtn {
+  display: flex;
+  justify-content: space-between;
+}

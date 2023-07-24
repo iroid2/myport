@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+$primFontColor: rgb(116, 118, 129);
+$primBgColor: #051128;
+$primGreen: rgb(218, 237, 26);
+$allPageBorderPadding: 1rem 3rem;
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $primBgColor;
+
+  .Header {
+    width: 100%;
+    .top-header {
+      width: 100%;
+      padding: $allPageBorderPadding;
+      // background-color: wheat;
+      @media (max-width: 998px) {
+        padding: 0.4rem 0.9rem;
+      }
+      .left-top-Header {
+        gap: 3rem;
+        color: $primFontColor;
+        @media (max-width: 768px) {
+          gap: 1rem;
+          width: 100%;
+        }
+        .email {
+          p {
+            @media (max-width: 768px) {
+              font-size: 1rem;
+            }
+            span {
+              color: $primGreen;
+            }
+          }
+        }
+        .phone-numb {
+          @media (max-width: 768px) {
+            display: none;
+          }
+          p {
+            font-size: 16px;
+            span {
+              align-self: center;
+              font-size: 16px;
+              color: $primGreen;
+            }
+          }
+        }
+      }
+      .right-top-Header {
+        gap: 1.6rem;
+        font-size: 1.1rem;
+        // background-color: red;
+        color: $primFontColor;
+        p {
+          &:hover {
+            color: $primGreen;
+          }
+        }
+      }
+    }
+    .navBar-header {
+      width: 93%;
+      padding: 1rem 0rem;
+      background-color: white;
+      margin: 0 auto;
+      border-radius: 10px;
+      .leftNav {
+        // background-color: red;
+        padding: 0;
+        img {
+          width: 230px;
+          @media (max-width: 768px) {
+            width: 230px;
+          }
+        }
+      }
+      .midNav {
+        gap: 3rem;
+        @media (max-width: 768px) {
+          display: none;
+        }
+        a {
+          font-size: 16px;
+          font-weight: 600;
+          color: $primBgColor;
+          text-decoration: none;
+        }
+      }
+      .rightNav {
+        padding: 0.1rem 0.7rem;
+        button {
+          background-color: red;
+          padding: 1rem 2rem;
+          border-radius: 5px;
+          border: none;
+          display: flex;
+          font-size: 1.2rem;
+          background-color: $primGreen;
+          .arrowIc {
+            font-size: 1.2rem;
+          }
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+        .hamMenu {
+          font-size: 1.4rem;
+          display: none;
+          @media (max-width: 768px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
